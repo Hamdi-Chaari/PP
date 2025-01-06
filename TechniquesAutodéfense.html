@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Karaté</title>
+  <link href="TechniquesAutodéfense.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Sono:wght@200..800&family=Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+    }
+
+    // Add event listener to the window to detect scroll
+    window.addEventListener('scroll', function() {
+      const elements = document.querySelectorAll('h3, p, li, video');
+
+      elements.forEach(element => {
+        if (isInViewport(element)) {
+          element.style.opacity = 1; // Fade in when in the viewport
+        } else {
+          element.style.opacity = 0; // Fade out when not in the viewport
+        }
+      });
+    });
+  </script>
+  
+  <div class="menu">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="burger-menu">
+      <img src="menu-icon.png" id="menu-icon">
+    </label>
+
+    <div id="links">
+      <a href="../TechniquesMains/TechniquesMains.html">Techniques de mains</a>
+      <a href="../TechniquesPieds/TechniquesPieds.html">Techniques de pieds</a>
+      <a href="../TechniquesAutodéfense/TechniquesAutodéfense.html">Techniques d'autodéfense</a>
+      <a href="../Katas/Katas.html">Katas</a>
+      <a href="../À propos/Àpropos.html">À propos</a>
+    </div>
+
+    <div id="Home-button">
+      <input type="checkbox" id="checkbox-home">
+      <label for="checkbox-home" id="Home-icon">
+        <a href="../Homepage/Homepage.html" id="Home">
+          <img src="Home-button.jpg" id="Home-button" title="Cliquez pour revenir à la page d'accueil">
+        </a>
+      </label>
+    </div>
+  </div>
+
+  <div class="title">
+    <h1>Techniques d'autodéfense</h1>
+  </div>
+    </br>
+    </br>
+
+  <div id="intro">
+    <p>Dans cette section, vous pourrez voir et apprendre les techniques d'autodéfense les plus simples à faire. Vous allez découvrir les 3 types de blocs ainsi que deux techniques d'autodéfense concrètes. Pour celles-ci, il n'y aura pas d'instructions puisqu'il est plus simple de l'apprendre en regardant la vidéo. Voici les techniques qui seront présentées :</p>
+  </div>
+  
+  <div id="redirect">
+    <ol>
+    <li><a href="#bloc-bas">Bloc en bas</a></li>
+    <li><a href="#bloc-milieu">Bloc milieu</a></li>
+    <li><a href="#bloc-tête">Bloc à la tête</a></li>
+    <li><a href="#couteau">Contrer un coup de couteau</a></li>
+    <li><a href="#cdp">Contrer un coup de pied</a></li>
+    </ol>
+    <br>
+    <p>Cliquez sur les noms des techniques pour aller voir la section choisie.</p>
+  </div>
+  </br>
+  </br>
+  
+  <div id="bloc-bas">
+    <h3>Le bloc en bas</h3>
+    <p>Le bloc en bas est utile pour bloquer un coup de pied en bas de la ceinture.</p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">
+          <span></span>
+          <p>1. Pour faire le bloc en bas, il faut fermer le poing et ramener la main de votre choix à l’épaule opposée à votre main. Notez que votre petit doigt doit être la partie de votre main touchant votre épaule.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">
+          <span></span>
+          <p>2. Par la suite, d’un mouvement brusque, vous devez balayer l’air avec votre bras vers le côté de votre bras faisant le bloc (exemple : vers la droite si vous faites le bloc avec votre main droite).</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">
+          <span></span>
+          <p>3. Le bloc devrait être orienté vers le sol de manière à ce que votre main soit allongée et forme un angle de 45 degrés avec votre corps.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="blocenbas.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="bloc-milieu">
+    <h3>Le bloc milieu</h3>
+    <p>Le bloc milieu est utile pour bloquer un coup de poing ou un coup de pied arrivant au niveau du torse.</p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox4">
+        <label for="checkbox4">
+          <span></span>
+          <p>1. Pour faire le bloc milieu, il faut fermer le poing et ramener la main de votre choix à l’épaule opposée à votre main. Notez que votre pouce doit être la partie de votre main touchant votre épaule.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5">
+          <span></span>
+          <p>2. Ensuite, vous devez balayer l’air avec votre bras brusquement vers le côté de votre bras faisant le bloc (exemple : vers la droite si vous faites le bloc avec votre main droite).</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox6">
+        <label for="checkbox6">
+          <span></span>
+          <p>3. Votre avant-bras et votre bras doivent être séparés par un angle de 90 degrés environ.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="blocmilieu.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="bloc-tête">
+    <h3>Le bloc à la tête</h3>
+    <p>Le bloc à la tête est utile pour bloquer un coup quelconque arrivant au niveau du visage ou au-dessus de la tête.</p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox7">
+        <label for="checkbox7">
+          <span></span>
+          <p>1. Pour commencer, votre bras doit être à l’horizontal et collé à vous au niveau de la ceinture. Notez que le dessous de votre bras devrait être la partie du bras qui est collée à vous.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox8">
+        <label for="checkbox8">
+          <span></span>
+          <p>2. Ensuite, d’un mouvement brusque, vous devez balayer l’air avec votre bras jusqu’à ce qu’il se trouve au-dessus de votre tête.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox9">
+        <label for="checkbox9">
+          <span></span>
+          <p>3. En faisant ce mouvement, votre bras doit faire une rotation de 180 degrés sur lui-même de manière à ce que vous voyez le dessus de votre bras au-dessus de votre tête.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox10">
+        <label for="checkbox10">
+          <span></span>
+          <p>4. Notez que votre bras devrait être placé à 45 degrés pour que les coups que vous recevrez soient aussi déviés sur le côté.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="bloctête.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="couteau">
+    <h3>Contrer un coup de couteau</h3>
+    <p>Pour cette technique, il est préférable de regarder la vidéo.</p>
+    <div class="flex">
+      <div class="video">
+        <video src="couteau.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="cdp">
+    <h3>Contrer un coup de pied</h3>
+    <p>Pour cette technique, il est préférable de regarder la vidéo.</p>
+    <div class="flex">
+      <div class="video">
+        <video src="autodéfensekick.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="conclu">
+    <h3>Pour en apprendre plus</h3>
+    <p>Bref, j'ai décidé de vous présenter ces techniques d'autodéfense puisqu'elles ne sont pas trop difficiles à apprendre, mais il en existe plein d'autres simples ou complexes. De plus, ce qui est amusant avec l'autodéfense, c'est qu'il y a plusieurs variantes possibles pour une seule technique, ce qui fait qu'il y a une infinité de possibilités. Je vous invite à en apprendre plus sur les techniques d'autodéfense sur Internet.</p>
+  </div>
+  </br>
+  </br>
+  </br>
+  
+</body>
+
+</html>

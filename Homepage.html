@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Karaté</title>
+  <link href="Homepage.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Sono:wght@200..800&family=Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+ 
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+    }
+
+    // Add event listener to the window to detect scroll
+    window.addEventListener('scroll', function() {
+      const elements = document.querySelectorAll('h3, p');
+
+      elements.forEach(element => {
+        if (isInViewport(element)) {
+          element.style.opacity = 1; // Fade in when in the viewport
+        } else {
+          element.style.opacity = 0; // Fade out when not in the viewport
+        }
+      });
+    });
+  </script>
+
+  <div class="menu">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="burger-menu">
+      <img src="menu-icon.png" id="menu-icon">
+    </label>
+    
+    <div id="links">
+      <a href="../TechniquesMains/TechniquesMains.html">Techniques de mains</a>
+      <a href="../TechniquesPieds/TechniquesPieds.html">Techniques de pieds</a>
+      <a href="../TechniquesAutodéfense/TechniquesAutodéfense.html">Techniques d'autodéfense</a>
+      <a href="../Katas/Katas.html">Katas</a>
+      <a href="../À propos/Àpropos.html">À propos</a>
+    </div>
+    
+    <div id="Home-button">
+      <input type="checkbox" id="checkbox-home">
+      <label for="checkbox-home" id="Home-icon">
+        <a href="../Homepage/Homepage.html" id="Home">
+          <img src="Home-button.jpg" id="Home-button" title="Cliquez pour revenir à la page d'accueil">
+        </a>
+      </label>
+    </div>
+  </div>
+  
+  <div class="intro">
+    <h1>Yokoso</h1>
+  </div>
+    </br>
+    </br>
+  
+  <div id="karaté" class="fade-in-out">
+    <h3>Qu'est ce que le karaté ?</h3>
+    <p>Le karaté est un art martial japonais. Ce mot vient des mots japonais « kara » et « te » voulant dire mains et vide respectivement.</p> 
+    <p>Cet art combine des techniques de frappe de pieds et de mains, de l’autodéfense, des « katas » (série de mouvements), des exercices de conditionnement physique, de la discipline, de la concentration et du contrôle (de son corps). Son objectif n’est pas donc pas seulement physique, mais aussi spirituel. </p>
+    <p>Il existe plusieurs styles de karaté différents, mais les principaux sont les suivants : le Shotokan-ryu, le Wado-ryu, le Shito-ryu, le Shorin-ryu et le Goju-ryu. </p>
+    <p>De plus, il existe plusieurs ceintures de couleur représentant des niveaux (c’est ce qu’on appelle des « kyu ») afin de pouvoir quantifier la progression d’un karatéka (personne faisant du karaté). Ces couleurs diffèrent selon le style, mais la ceinture ultime est la ceinture noire. </p> 
+    <p>Cependant, le voyage ne s’arrête pas là, au contraire il ne fait que commencer. Après l’obtention de cette prestigieuse, il y a encore des grades (niveaux, qu’on appelle des « dan ») à atteindre. Je dis que le voyage ne fait que commencer rendu là, puisqu’à mon avis, ce n’est que là qu’on commence réellement à devenir plus proche d’être des maîtres et qu’on commence à apprendre des techniques et des katas bien plus complexes. </p>
+    <p>Cette discipline est parfaite pour vous si vous cherchez à devenir une meilleure personne physiquement et mentalement. Bref, le karaté c’est plus qu’un simple art martial.</p>
+  </div>
+  <br>
+
+  <div id="technique" class="fade-in-out">
+    <h3>Qu'est-ce qu'une technique ?</h3>
+    <p>Les techniques sont simplement des mouvements faits par le karatéka dans le but de se défendre, d’attaquer ou de prendre contrôle de son adversaire. Afin de parfaire notre exécution d’une technique, il faut la pratiquer de multiple fois avant de pouvoir la faire de manière précise et rapide.</p>
+  </div>
+  <br>
+
+  <div id="kata" class="fade-in-out">
+    <h3>Qu'est-ce qu'un « kata » ?</h3>
+    <p>Les « katas » sont des séries de techniques exécutées dans un certain ordre dans le but de créer une sorte de chorégraphie. Chaque ceinture a son ou ses propres « katas ». Les premiers « katas » sont très répétitifs, mais ceux plus avancés n’ont plus vraiment de suite logique, ce qui les rend plus intéressant à apprendre à mon avis. Il y a des « katas » non armés où on ne fait les techniques qu’avec nos mains vides, mais il existe des « katas » armés où on fait des techniques avec des armes comme les « kamas », le « bo », les « saï » et les « tonfa ». Dernièrement, dans les katas, il y a ce qu'on appelle des « kiai » qui sont des sortes de cris de combat. Ils obligent la personne qui fait le cri à contracter les abdominaux et d'expirer dans le but mettre plus de puissance sur un coup.</p>
+  </div>
+  <br>
+
+  <div id="préalables" class="fade-in-out">
+    <h3>Avant d'aller vous aventurer...</h3>
+    <p>Il y a quelques petites choses que vous devez savoir avant d’aller vous aventurer sur ce site. </p>
+    <p>Premièrement, il faut savoir qu’il existe différentes positions au karaté comme la position du chat, la position du dragon, la position cavalière, la position arrière et la position avant. Cette dernière est celle sur laquelle on va s’attarder. La position avant est la position de base que vous allez utiliser pour toutes les techniques qui vont être présentées. Elle consiste à avoir un pied en avant un pied en arrière. Il faut que vous pieds soient tous les deux à 45 degrés environ de manière à ce que vos pieds soient à peu près parallèles. </p>
+    <p>Deuxièmement, vos mains doivent toujours être en garde. C’est à dire que votre main étant du même côté que votre pied avant doit elle aussi être plus en avant. L’autre main, celle de derrière, doit rester près de votre mâchoire pour pouvoir encaisser un coup à la tête. Rappelez-vous de ces informations car elles vous seront utiles lorsque vous irez explorer ce site. </p>
+  </div>
+  <br>
+
+<h3>Sur ce, bonne découverte du karaté! Je vous souhaite d'y trouver une passion!</h3>
+  <br>
+  <br>
+  <br>
+  <br>
+
+</body>
+  
+</html>
