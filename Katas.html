@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Katas</title>
+  <link href="Katas.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Sono:wght@200..800&family=Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+    }
+
+    // Add event listener to the window to detect scroll
+    window.addEventListener('scroll', function() {
+      const elements = document.querySelectorAll('h3, p, li, video');
+
+      elements.forEach(element => {
+        if (isInViewport(element)) {
+          element.style.opacity = 1; // Fade in when in the viewport
+        } else {
+          element.style.opacity = 0; // Fade out when not in the viewport
+        }
+      });
+    });
+  </script>
+  
+  <div class="menu">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="burger-menu">
+      <img src="menu-icon.png" id="menu-icon">
+    </label>
+
+    <div id="links">
+      <a href="../TechniquesMains/TechniquesMains.html">Techniques de mains</a>
+      <a href="../TechniquesPieds/TechniquesPieds.html">Techniques de pieds</a>
+      <a href="../TechniquesAutodéfense/TechniquesAutodéfense.html">Techniques d'autodéfense</a>
+      <a href="../Katas/Katas.html">Katas</a>
+      <a href="../À propos/Àpropos.html">À propos</a>
+    </div>
+
+    <div id="Home-button">
+      <input type="checkbox" id="checkbox-home">
+      <label for="checkbox-home" id="Home-icon">
+        <a href="../Homepage/Homepage.html" id="Home">
+          <img src="Home-button.jpg" id="Home-button" title="Cliquez pour revenir à la page d'accueil">
+        </a>
+      </label>
+    </div>
+  </div>
+  
+  <div class="title">
+    <h1>Katas</h1>
+  </div>
+    </br>
+    </br>
+
+  <div id="intro">
+    <p>Dans cette section, vous pourrez voir et apprendre les deux premiers « katas ». Ce sont les « katas » de la ceinture blanche. Voici les « katas » qui seront présentés :</p>
+  </div>
+  
+  <div id="redirect">
+    <ol>
+    <li><a href="#kata1">Premier « kata »</a></li>
+    <li><a href="#kata2">Deuxième « kata »</a></li>
+    </ol>
+    <br>
+    <p>Cliquez sur les noms des « katas » pour aller voir la section choisie.</p>
+  </div>
+  </br>
+  </br>
+
+
+  
+  <div id="kata1">
+    <h3>Le premier « kata »</h3>
+    <p>Le premier « kata » est le premier qu'on apprend. Les techniques utilisées dans le premier « kata » sont : les 3 blocs de base et le « jab ». Je vous conseille donc de les connaître avant de commencer à apprendre ce « kata ». Donner des instructions claires et précises sans avoir de visuel est difficile, donc je vous invite à regarder la vidéo ci-dessous.</p>
+      <div class="video">
+        <video src="kata1.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+  
+  <div id="kata2">
+    <h3>Le deuxième « kata »</h3>
+    <p>Le deuxième « kata » est le deuxième qu'on apprend. Les techniques utilisées dans le deuxième « kata » sont : les 3 blocs de base, le coup de pied avant et le « jab ». Je vous conseille donc de les connaître avant de commencer à apprendre ce « kata ». Donner des instructions claires et précises sans avoir de visuel est difficile, donc je vous invite à regarder la vidéo ci-dessous.</p>
+    <div class="flex">
+      <div class="video">
+        <video src="kata2.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="conclu">
+    <h3>Pour en apprendre plus</h3>
+    <p>Les premiers « katas » sont très basiques et peu intéressant, cependant les « katas » plus avancés sont très amusants à faire puisqu’ils n’ont plus de régularité. De plus, les mouvements sont plus variés. Par exemple, il y a des mouvements se faisant en diagonale et des sauts dans certains « katas ». Dernièrement, certains styles de karaté offrent des « katas » avec des armes comme les « kamas », le « bo », les « saï » et les « tonfa ». Je vous invite à aller voir les « katas » plus avancés et les « katas » armés sur Internet.
+</p>
+  </div>
+  </br>
+  </br>
+  </br>
+  
+</body>
+
+</html>
