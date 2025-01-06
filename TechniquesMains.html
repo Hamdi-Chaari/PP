@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Karaté</title>
+  <link href="TechniquesMains.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Forum&family=Sono:wght@200..800&family=Space+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <script>
+    // Function to check if an element is in the viewport
+    function isInViewport(element) {
+      const rect = element.getBoundingClientRect();
+      return rect.top >= 0 && rect.left >= 0 && rect.bottom <= window.innerHeight && rect.right <= window.innerWidth;
+    }
+
+    // Add event listener to the window to detect scroll
+    window.addEventListener('scroll', function() {
+      const elements = document.querySelectorAll('h3, p, li, video');
+
+      elements.forEach(element => {
+        if (isInViewport(element)) {
+          element.style.opacity = 1; // Fade in when in the viewport
+        } else {
+          element.style.opacity = 0; // Fade out when not in the viewport
+        }
+      });
+    });
+  </script>
+  
+  <div class="menu">
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" id="burger-menu">
+      <img src="menu-icon.png" id="menu-icon">
+    </label>
+
+    <div id="links">
+      <a href="../TechniquesMains/TechniquesMains.html">Techniques de mains</a>
+      <a href="../TechniquesPieds/TechniquesPieds.html">Techniques de pieds</a>
+      <a href="../TechniquesAutodéfense/TechniquesAutodéfense.html">Techniques d'autodéfense</a>
+      <a href="../Katas/Katas.html">Katas</a>
+      <a href="../À propos/Àpropos.html">À propos</a>
+    </div>
+
+    <div id="Home-button">
+      <input type="checkbox" id="checkbox-home">
+      <label for="checkbox-home" id="Home-icon">
+        <a href="../Homepage/Homepage.html" id="Home">
+          <img src="Home-button.jpg" id="Home-button" title="Cliquez pour revenir à la page d'accueil">
+        </a>
+      </label>
+    </div>
+  </div>
+
+  <div class="title">
+    <h1>Techniques de mains</h1>
+  </div>
+    </br>
+    </br>
+
+  <div id="intro">
+    <p>Ici je vais vous présenter 5 techniques de mains de niveau facile à intermédiaire. Voici les techniques de mains qui seront présentées :</p>
+  </div>
+
+  <div id="redirect">
+    <ol>
+    <li><a href="#jab">« Jab »</a></li>
+    <li><a href="#direct">« Direct »</a></li>
+    <li><a href="#crochet">Crochet</a></li>
+    <li><a href="#uppercut">« Uppercut »</a></li>
+    <li><a href="#haito">« Haito »</a></li>
+    </ol>
+    <br>
+    <p>Cliquez sur les noms des techniques pour aller voir la section choisie.</p>
+  </div>
+  </br>
+  </br>
+
+  <div id="jab">
+    <h3>Le « jab »</h3>
+    <p>Le « jab » est la première technique de main qu’on apprend.</p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">
+          <span></span>
+          <p>1. Elle consiste à frapper de manière droite vers l’avant avec la main avant.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">
+          <span></span>
+          <p>2. Les jointures de votre main doivent être à l’horizontal.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">
+          <span></span>
+          <p>3. Votre pouce ne doit pas être dans votre poing. Il doit être à l’extérieur de votre poing.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="jab.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="direct">
+    <h3>Le « direct »</h3>
+    <p>Le direct ressemble au « jab ». Cependant, le direct se fait avec la main de derrière.</p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox4">
+        <label for="checkbox4">
+          <span></span>
+          <p>1. Pour chercher plus de portée et de puissance, il faut que vous tourniez vos hanches vers l’avant.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5">
+          <span></span>
+          <p>2. Cependant, il ne faut pas oublier de garder le dos droit.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox6">
+        <label for="checkbox6">
+          <span></span>
+          <p>3. Comme le jab, les jointures de votre main doivent être à l’horizontal.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox7">
+        <label for="checkbox7">
+          <span></span>
+          <p>4. Votre pouce ne doit pas être dans votre poing. Il doit être à l’extérieur de votre poing.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="direct.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+
+  <div id="crochet">
+    <h3>Le crochet</h3>
+    <p>Le crochet est différent des deux autres techniques vues précédemment. Le crochet peut se faire avec la main avant ou la main arrière. </p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox8">
+        <label for="checkbox8">
+          <span></span>
+          <p>1. Pour réaliser cette technique il faut que vous placiez votre main (avant ou arrière) de manière à ce que les jointures soient à la verticale.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox9">
+        <label for="checkbox9">
+          <span></span>
+          <p>2. Ensuite, vous frappez vers le côté opposé à votre main.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox10">
+        <label for="checkbox10">
+          <span></span>
+          <p>3. Pour plus de puissance, vous pouvez tourner vos hanches.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox11">
+        <label for="checkbox11">
+          <span></span>
+          <p>4. À la fin de la frappe, votre main devrait ressembler au mouvement que vous faites pour tenir une tasse de café en avant de vous.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox12">
+        <label for="checkbox12">
+          <span></span>
+          <p>5. Le crochet ne devrait pas être fait trop proche ni trop loin de votre corps.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="crochet.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+  
+  <div id="uppercut">
+    <h3>L' « uppercut »</h3>
+    <p>Comme le crochet, l’ « uppercut » se fait avec la main avant ou la main arrière. </p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox13">
+        <label for="checkbox13">
+          <span></span>
+          <p>1. Pour réaliser cette technique il faut que vous placiez votre main (avant ou arrière) de manière à ce que les jointures soient à l’horizontal.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox14">
+        <label for="checkbox14">
+          <span></span>
+          <p>2. Cependant, contrairement au jab, vous devez tourner votre main de façon à ce que vos doigts font face à vous.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox15">
+        <label for="checkbox15">
+          <span></span>
+          <p>3. Lorsque vous frappez, il faut que votre main soit parallèle à votre bras afin de ne pas vous blesser le poignet.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox16">
+        <label for="checkbox16">
+          <span></span>
+          <p>4. Ensuite, vous allez frapper vers le haut de manière à former un angle de 45 degrés.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox17">
+        <label for="checkbox17">
+          <span></span>
+          <p>5. L' « uppercut » est généralement utilisé pour frapper au menton, mais il peut aussi être utilisé pour frapper au plexus solaire.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="uppercut.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+  </br>
+  
+  <div id="haito">
+    <h3>Le « haito »</h3>
+    <p>Le « haito » est une technique un peu plus difficile à réaliser que celles qui ont été présentées plus haut. « Haito » est un mot japonais désignant la partie tranchante de la main avec laquelle ce coup est réalisé. Cette technique se fait généralement avec la main arrière, mais on peut le faire avec la main avant aussi. </p>
+    <div class="flex">
+      <div class="a">
+        <input type="checkbox" id="checkbox18">
+        <label for="checkbox18">
+          <span></span>
+          <p>1. Pour réaliser le « haito », il faut ouvrir votre main et coller vos doigts. Ceux-ci sont supposés être allongés.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox19">
+        <label for="checkbox19">
+          <span></span>
+          <p>2. Ensuite, vous devez rentrer votre pouce à l’intérieur de votre main puisque vous risquez de vous blessez.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox20">
+        <label for="checkbox20">
+          <span></span>
+          <p>3. Par la suite, vous devez faire un mouvement circulaire vers l’extérieur dans le but de frapper au cou. Notez que votre bras doit rester droit.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox21">
+        <label for="checkbox21">
+          <span></span>
+          <p>4. Pour plus de force, il faut que vous tourniez vos hanches.</p>
+        </label>
+      </div>
+      <div class="a">
+        <input type="checkbox" id="checkbox22">
+        <label for="checkbox22">
+          <span></span>
+          <p>5. Essayez de ne pas faire un trop grand mouvement lorsque vous faites le « haito » puisque c’est prévisible en situation de combat.</p>
+        </label>
+      </div>
+      <div class="video">
+        <video src="haito.mp4" controls></video>
+      </div>
+    </div>
+  </div>
+
+  <div id="conclu">
+    <h3>Pour en apprendre plus</h3>
+    <p>Bref, ce qui est amusant avec les techniques de mains, c'est qu'on peut facilement créer une multitude de combinaisons. Les techniques que j'ai présentées sont des techniques relativement basiques, mais il en existe d'autres légèrement plus complexes comme le « spinning backfist », le coup de coude et le coup de paume. Je vous invite à aller en apprendre plus sur les techniques de mains sur Internet.</p>
+  </div>
+  </br>
+  </br>
+  </br>
+  
+</body>
+
+</html>
